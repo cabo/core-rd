@@ -1,4 +1,4 @@
-class CreateTargetAttributes < ActiveRecord::Migration
+class CreateTargetAttributes < ActiveRecord::Migration[4.2]
   def change
     create_table :target_attributes do |t|
       t.references :typed_link, index: true, null: false

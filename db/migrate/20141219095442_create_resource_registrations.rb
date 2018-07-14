@@ -1,4 +1,4 @@
-class CreateResourceRegistrations < ActiveRecord::Migration
+class CreateResourceRegistrations < ActiveRecord::Migration[4.2]
   def change
     create_table :resource_registrations do |t|
       t.string  :ep, null: false

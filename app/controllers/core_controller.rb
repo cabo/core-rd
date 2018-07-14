@@ -5,7 +5,7 @@ class CoreController < ApplicationController
     if @links.empty?
       head :not_found
     else
-      render text: @links.to_link
+      render body: @links.to_link
     end
   end
 end

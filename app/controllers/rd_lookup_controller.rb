@@ -15,7 +15,7 @@ class RdLookupController < ApplicationController
 
     head 4.04 and return if results.empty?
 
-    render status: 2.05, text: results.to_link
+    render status: 2.05, body: results.to_link
   end
 
   private
